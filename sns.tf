@@ -4,7 +4,7 @@ resource "aws_cloudformation_stack" "sns_topic" {
 
   tags = merge(
     {
-      "Name" = var.stack_name
+      "Name" = var.display_name
     },
   )
 }
