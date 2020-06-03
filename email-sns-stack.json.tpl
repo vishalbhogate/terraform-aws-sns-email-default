@@ -4,6 +4,7 @@
     "EmailSNSTopic": {
       "Type" : "AWS::SNS::Topic",
       "Properties" : {
+        "TopicName" : "${display_name}",
         "DisplayName" : "${display_name}",
         "Subscription": [
           ${subscriptions}
